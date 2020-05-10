@@ -1,0 +1,24 @@
+{
+  "name": "dating-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec node src/index.js"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.39.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0"
+  }
+}
