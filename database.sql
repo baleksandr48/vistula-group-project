@@ -17,7 +17,8 @@ create table "Book"
     "categoryId" integer      not null
         constraint "Book_categoryId_fkey"
             references "Category"
-            on delete cascade
+            on delete cascade,
+    image        varchar(255)
 );
 
 create table "Opinion"
