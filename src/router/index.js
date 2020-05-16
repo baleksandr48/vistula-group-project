@@ -13,6 +13,7 @@ const {
   getBookById,
   getAllBooks,
   updateBook,
+  uploadImage,
 } = require("../controllers/book-controller");
 const {
   getOpinionById,
@@ -29,6 +30,8 @@ router.get("/book/:id", getBookById);
 router.post("/book", createBook);
 router.delete("/book/:id", deleteBook);
 router.put("/book/:id", updateBook);
+
+router.post("/image", uploadImage);
 
 router.get("/categories/", getAllCategories);
 router.get("/category/:id", getCategoryById);
